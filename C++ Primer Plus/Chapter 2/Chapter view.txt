@@ -1,0 +1,23 @@
+1.function                                       // called functions
+
+2.include iostream file       // It causes the contents of the iostream file to be substituted for this directive before final compilation.
+
+3.omit std::               // It makes definitions made in the std namespace available to a program
+
+4.cout << "Hello,world" << endl;
+
+5.int cheeses;
+
+6.cheeses = 32;
+
+7.cin >> cheeses;
+
+8.cout << "We have " << cheeses << " varieties of cheese\n";
+
+9.return value type ; argument type
+
+10.without return value (void)           // return; is also ok
+
+11.i) #include <iostream>
+    ii) using namespace std;
+    iii) using std::cout

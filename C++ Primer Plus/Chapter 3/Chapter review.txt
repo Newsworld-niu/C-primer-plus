@@ -1,0 +1,17 @@
+1.match the need
+
+2. short num1 = 80; unsigned int num2 = 42110; long long num3 = 3000000000
+
+3.overloading
+
+4.type
+
+5.no only on ASCII code
+
+6.1.cout.put(char(88))      char cd = 88 cout << cd
+
+7?
+
+8.74 4 0 4.5 3        int cd =  int (x1) + int (x2) int cd = x1 + x2
+
+10.int float char char_32t double
