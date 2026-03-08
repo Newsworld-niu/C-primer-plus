@@ -1,0 +1,83 @@
+1.a. char actors[30]
+  b. short betsie[100]
+  c. float chuck[13]
+  d. long double dipsea[64]
+
+2. #include<array>
+    std::array<char, 30> actors;
+    std::array<short, 100> betsie;
+    std::array<float, 13> chuck;
+    std::array<long double, 64> dipsea;
+
+
+3. int numbers[5] = {1, 3, 5, 7, 9}
+
+4. int even = numbers[0] + numbers[4]
+
+5. float ideas[5];
+    std::cout << ideas[1]
+
+6.char food = "cheeseburger"  
+❌ char food[] = "cheeseburger"
+
+7.#include<string>
+    std::string = "Waldorf Salad"
+❌ std::string lunch = "Waldorf Salad";
+
+8.structure fish
+{
+    char kind[10];
+    int weight;
+    double length;
+}
+❌ struct fish
+
+
+9. fish fish1;
+    fish1.kind = poisson;
+    fish1.weight = 100;
+    fish1.length = 14.5
+❌？ fish petes=
+{
+    "trouts",
+    12,
+    26.25
+};
+
+10. enum Response {No, Yes, Maybe}
+
+11. double ted;
+    double * pt = &ted;
+    std::cout << *pt
+
+12. float treacle[10];
+    float *pt = treacle;
+    std::cout << *pt << " " << *(pt + 9)
+another std::cout << pt[0] << " " << pt[9]
+
+13. #include<vector>
+    std::cout << "Enter a positive number"
+    int number;
+    std::cin >> number;
+    int * pt = new int[number];
+    std::vector <int> a1(number);
+❌ unsigned int number
+
+14. valid. it print the address of the string
+
+15. fish *pt = new fish;
+     pt->kind = poisson;
+
+16. it works properly.    cin.getline()read the empty line
+    but cin not?
+
+17. #include<string>
+    #include<vector>
+    #include<array>
+
+    const int num = 10;
+    std::vector<string> a1(num);
+    std::array<string, num> a2;
+
+    ❌ std::vector<std::string> a1(num);
+       std::array<std::string, num> a2;
