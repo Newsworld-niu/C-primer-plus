@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/news/vscode/c++ primer/C-primer-plus/C++ Primer Plus/Chapter 5/output/5.3express'
+relocations:     []
+...
