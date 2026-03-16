@@ -1,0 +1,62 @@
+1.faster, more readable
+
+2.ch + 1 makes it an int type,the result is number
+
+3.ct1 = 23 ; ct2 = 2
+❌ ch == ‘$’
+
+4.
+    weight >= 115 && weight < 125
+    ch == q || ch == q
+    if (x % 2 == 0 && x != 26)
+    if (x % 2 == 0 && x % 26 != 0)
+    (donation >= 1000 & donation <= 2000) || (guest == 1)
+    ❌ (ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z')
+    char 永远是数！！！ 
+
+5. no, boolean
+
+6.
+    if (x >=0)
+        cout << x
+    else
+        cout << -x
+    ❌ (x >= 0) ? x : -x
+
+7.int grade[5] = [1,2,3,4,5];
+ int i = 1;
+ while (i < 6)
+    switch(i)
+    {
+        case 1 : ++a_grade;
+        case 2 : ++b_grade;
+        case 3 : ++c_grade;
+        case 4 : ++d_grade;
+        default : ++f_grade;
+    }
+    ❌
+    switch(ch)
+    {
+        case 'A' : ++a_grade;
+                    break;
+        case 'B' : ++b_grade;
+                    break;
+        case 'C' : ++c_grade;
+                    break;
+        case 'D' : ++d_grade;
+                    break;
+        default : ++f_grade
+                    break;
+    }
+
+8. 可替代性，不用每一个改
+    适用性更强
+
+9.
+    int line = 0;
+    char ch;
+    while (cin.get(ch) && ch != 'Q')
+    {
+        if (ch != '\n')
+            ++line;
+    }
