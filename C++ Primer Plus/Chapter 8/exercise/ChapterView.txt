@@ -1,0 +1,57 @@
+1. short, regular
+
+2.
+    a. void song(const char * name, int times = 1)
+    b. no default value
+    c. yes, but change the position
+
+3.
+    void iquote(int n);
+    void iquote(double n);
+    #include <cstring>
+    void iquote(std::string st)
+
+4.
+a.void show_box(const box & b1)
+{
+    std::cout << b1.maker << std::endl;
+    std::cout << b1.height << std::endl;
+    std::cout << b1.width << std::endl;
+    std::cout << b1.length << std::endl;
+    std::cout << b1.volume << std::endl;
+}
+b.void show_box(box & b1)
+{
+    b1.volume = b1.height * b1.width * b1.length;
+}
+
+5.
+void fill(std::array<double, Seasons> * pa);
+void fill(std::array<double, Seasons> & pa)；
+
+6.
+    a.double mass(double density, double volume = 1.0)
+
+    b.repeat(int times = 10, const char * name = "I'm OK")
+      repeat(const char * name = "But you're kind of stupid", int times = 5)
+
+    c.int average(int m = 3. int n = 6);
+      double average(double m = 3.0, double n = 6.0)
+    
+    d.no 
+
+7.
+template<class T>
+T larger(const T &a, const T &b)
+{return a>b ? a : b}
+
+8.(4 7)
+template<> box larger<box>(const box & b1, const box & b2)
+{return b1.volume > b2.volume ? b1 : b2}
+
+9.
+v1: float
+v2: reference to float
+v3: float &
+v4: int 
+v5: float
