@@ -1,4 +1,5 @@
 1. short, regular
+Short, nonrecursive functions that can fit in one line of code are good candidates for inline status
 
 2.
     a. void song(const char * name, int times = 1)
@@ -7,9 +8,18 @@
 
 3.
     void iquote(int n);
+    {
+        cout << "\"" << n << "\"";
+    }
     void iquote(double n);
+    {
+        cout << '"' << n << '"';
+    }
     #include <cstring>
-    void iquote(std::string st)
+    void iquote(const std::string st)
+    {
+        cout << "\"" << st << "\""
+    }
 
 4.
 a.void show_box(const box & b1)
@@ -26,8 +36,8 @@ b.void show_box(box & b1)
 }
 
 5.
-void fill(std::array<double, Seasons> * pa);
-void fill(std::array<double, Seasons> & pa)；
+void fill(std::array<double, Seasons> & pa);
+void fill(const std::array<double, Seasons> & pa)；
 
 6.
     a.double mass(double density, double volume = 1.0)
