@@ -1,0 +1,54 @@
+1.
+a auto
+b static external linkage
+c static internal linkage 或者 defined in an unnamed namespace
+d static no linkage
+
+2.
+A using declaration makes available a single name from a namespace,and it has the
+scope corresponding to the declarative region in which the using declaration occurs. 
+A using directive makes available all the names in a namespace.When you use a 
+using directive,it is as if you have declared the names in the smallest declarative 
+region containing both the using declaration and the namespace itself.
+
+3.
+#include <iostream>
+int main()
+{
+    double x;
+    std::cout << "Enter value: ";
+    while (! (std::cin >> x))
+    {
+        std::cout << "Bad input. Please enter a number: ";
+        std::cin.clear();
+        while (std::cin.get() != '\n')
+            continue;
+    }
+    std::cout << "Value = " << x << std::endl;
+}
+
+4.
+using std::cout;
+using std::cin;
+using std::endl;
+
+5.
+在不同的文件里定义两个命名空间，不同的命名空间函数不同
+❌
+1.在函数定义加上前缀static
+2.在unnamed namespace里定义恰当函数
+
+6.
+10
+4
+?
+Other: 10, 1
+another(): 10, -4
+
+7.
+1
+4, 1, 2
+2
+2
+4, 1, 2
+2
