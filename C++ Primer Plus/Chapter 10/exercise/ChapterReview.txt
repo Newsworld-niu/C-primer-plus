@@ -1,0 +1,62 @@
+1.
+a user-defined type include data and member function 
+private public interface
+
+2.
+abstraction: private data   
+            public member function
+
+encapsulation:class declaration class definition private
+
+data hiding: only access to data by member function(public interface)
+
+3.
+object is an instance of class, class is an anstraction of object
+
+4.
+can be accessed; can be invoked as method; 
+
+5
+class Bank
+{
+private:
+    std::string name;
+    std::string number;
+    double balance;
+public:
+    Bank(const & std::string name, const & std::string number, double balance); 
+    void show() const;
+    void deposite(double money);
+    void withdraw(double money);
+}
+
+6.
+创建一个新对象，或者修改对象？
+消灭超出scope的对象
+
+7.
+Bank(const & std::string name1, const & std::string number1, const double ba)
+{
+    name = name1;
+    number = number1;
+    balance = ba;
+}
+Bank()
+{
+
+}
+
+8.
+就是在没有对对象进行初始化时会调用的函数
+可以直接声明对象而不用初始化
+保证了每个对象都有值
+
+9.
+int number() const {return share};
+double share_val() const {return share_val};
+const string & compan() const {return company;}
+
+
+10.
+this is the address of an object
+*this is the object itself
