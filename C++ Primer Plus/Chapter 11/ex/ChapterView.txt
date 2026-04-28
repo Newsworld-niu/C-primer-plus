@@ -1,0 +1,38 @@
+1.
+Stonewt::operator*(double d)
+{
+    pounds = pounds * d;
+    stone = pounds / Lbs;
+    pds_left = pounds - Lbs * stone;  
+}
+
+2.
+member function:
+class method, 通过类对象引用
+friend function：
+可以访问private，但是不属于类对象，需要接受一个类对象作为参数？
+
+3.
+data 需要；
+但是如果只是访问成员函数，不需要成为friend
+
+4.
+Stonewt operator*(double d, const Stonewt & st)
+{
+    Stonewt st1;
+    st1.stone = st.stone * d;
+    return st1;
+}
+
+5.
+only 二元运算符可以重载？
+
+6.
+只能在类里重载
+不能在常规的地方重载
+
+7.
+Stonewt::operator double() const
+{
+    return mag;
+}
